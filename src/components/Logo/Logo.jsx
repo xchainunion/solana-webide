@@ -26,7 +26,7 @@ export default class Logo extends PureComponent {
     return (
       <div className="logo">
         <Link to="/" className="logo-text">
-          OEXChain IDE
+          Solana IDE
         </Link>
       </div>
     );
