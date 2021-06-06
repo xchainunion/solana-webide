@@ -267,8 +267,8 @@ export default class ContractManager extends Component {
       curCallFuncName: '',
       curTxResult: {},
       resultDetailInfo: '',
-      solFileList: ['sample.sol'],
-      tabFileList: ['sample.sol'],
+      solFileList: ['sample.rs'],
+      tabFileList: ['sample.rs'],
       libFileList: [],
       smapleFileList: [],
       fileContractMap: {},
@@ -980,7 +980,7 @@ export default class ContractManager extends Component {
   }
   
   isDisplayedFile(nodeName) {
-    return nodeName.endsWith('.ui') || nodeName.endsWith('.bin') || nodeName.endsWith('.abi') || nodeName.endsWith('.sol');
+    return nodeName.endsWith('.ui') || nodeName.endsWith('.bin') || nodeName.endsWith('.abi') || nodeName.endsWith('.rs');
   }
 
   onSelectSolFile = (selectedKeys) => {
@@ -1029,8 +1029,8 @@ export default class ContractManager extends Component {
       Feedback.toast.error('不可包含特殊字符');
       return;
     }
-    if (!this.state.newContractFileName.endsWith('.sol')) {
-      this.state.newContractFileName += '.sol';
+    if (!this.state.newContractFileName.endsWith('.rs')) {
+      this.state.newContractFileName += '.rs';
     }
     let exist = false;
     this.state.solFileList.map(contractFileName => {

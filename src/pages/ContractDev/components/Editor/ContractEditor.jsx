@@ -30,7 +30,7 @@ export default class ContractEditor extends Component {
   componentDidMount() {
     this.state.editor = monaco.editor.create(this.refs.editorContainer, {
       value: this.state.code,
-      language: (this.props.fileType == 'abi') ? 'json' : 'sol',
+      language: (this.props.fileType == 'abi') ? 'json' : 'rust',
       lineNumbers: 'on',
       roundedSelection: false,
       scrollBeyondLastLine: false,
@@ -53,7 +53,7 @@ export default class ContractEditor extends Component {
   compile = () => {
     
     var input = {
-      language: 'Solidity',
+      language: 'Rust',
       sources: {
         'test.sol': {
           content: this.state.editor.getValue(),
