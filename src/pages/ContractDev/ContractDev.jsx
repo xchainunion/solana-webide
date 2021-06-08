@@ -3,6 +3,7 @@ import { Feedback, Card, Select, Checkbox } from '@icedesign/base';
 import Container from '@icedesign/container';
 import { Input, Button, Tab, Grid, Tree, Dialog, Collapse, Message, Icon, Balloon, Shell } from '@alifd/next';
 import * as oexchain from 'oex-web3';
+import * as solanaWeb3 from '@solana/web3.js';
 import * as ethers from 'ethers';
 import * as ethUtil from 'ethereumjs-util';
 import * as abiUtil from 'ethereumjs-abi';
@@ -1621,7 +1622,7 @@ export default class ContractManager extends Component {
                   </TreeNode>
               </Tree>
               &nbsp;&nbsp;
-              <a href='https://github.com/oexplatform/oexchain/wiki' target="_blank" rel="noopener noreferrer">{T('开发者Wiki')}</a>
+              <a href='https://github.com/solana-labs/solana/wiki/Learning-Blockchain,-Crypto,-and-Solana' target="_blank" rel="noopener noreferrer">{T('开发者Wiki')}</a>
               </Col>
             {/* </Shell.LocalNavigation>  } tabRender={(key, props) => <CustomTabItem key={key} {...props} />} 
             <Shell.Content > */}

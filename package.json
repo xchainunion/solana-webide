@@ -16,6 +16,7 @@
     "@icedesign/menu": "^0.1.1",
     "@icedesign/skin": "^0.1.0",
     "@icedesign/styled-menu": "^1.0.6",
+    "@solana/web3.js": "^1.17.0",
     "@uiw/react-codemirror": "^1.0.19",
     "antd": "^3.13.2",
     "axios": "^0.18.0",
